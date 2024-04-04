@@ -12,6 +12,7 @@ python-dateutil==2.8.2
 scikit-learn==1.4.1.post1
 scipy==1.12.0
 setuptools==68.2.2
+shapely==2.0.3
 six==1.16.0
 structure-tensor==0.2.1
 threadpoolctl==3.3.0
