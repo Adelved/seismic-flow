@@ -40,3 +40,12 @@ surfaces, _ = extract_surfaces(
     kwargs=peak_params
 )
 
+
+fig,ax = plt.subplots(1,1,figsize=(20,20))
+ax.imshow(seismic_line,cmap='gray', extent=[0, seismic_line.shape[1], seismic_line.shape[0], 0], alpha=.0)
+
+#surface objects have a 2D numpy array attribute path (y, x)
+for surface in surfaces:
+    color = 'k'
+    ax.plot(surface.path[:,1], surface.path[:,0], linewidth=1, color = color , alpha = 1)
+plt.show()
